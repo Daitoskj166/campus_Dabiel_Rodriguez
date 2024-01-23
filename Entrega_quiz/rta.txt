@@ -1,0 +1,54 @@
+1. b
+2. a
+3. c
+4. c
+5. a
+
+
+Algoritmo calculadora_Estadisctica_Edad
+	Definir edad, suma, contadorEdad Como Entero
+	contadorEdad = 0
+	suma = 0
+	Definir edad Como Entero
+	
+	Repetir
+		Escribir "ingrese la edad:"
+		Leer edad
+		Si edad >= 0 Entonces
+			Repetir
+				Escribir "ingrese la edad:"
+				Leer edad
+				contadorEdad = contadorEdad + 1
+				suma = suma + edad
+				
+			Hasta Que edad < 0
+			Escribir "opciones: " 
+			Escribir "1-calcular promedio de edades "
+			Escribir "2-hallar la edad maxima "
+            Escribir "No se pudo hacer edad maxima"
+			leer opciones
+			
+			Segun opciones Hacer
+				1:
+					para i = 1 Hasta contadorEdad Con Paso 1 Hacer
+						promedioEdad = suma/contadorEdad
+					FinPara
+					Escribir "El promedio de edad es de: " , promedioEdad
+					
+					
+			FinSegun
+		FinSi
+	Hasta Que edad < 0
+
+	
+	
+FinAlgoritmo
+
+Lenguaje natural:
+Entrada: edad
+Proc:
+El usuario ingresa la edad hasta que la edad sea menor que cero, y mientras que la edad se va ingresando
+se va contando la cantidad de edades ingresadas en una variable contador,
+despues en una estructura de control de segun, esta la opcion de promedio de edad
+que suma las edades y lo divide por el contador de cantidad de edades. 
+no se alcanzo a hacer la mayoria de edad.
